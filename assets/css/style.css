@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing :border-box;
+}
+
+:root{
+    --fondo: rgb(107, 0, 128);
+    --fontfami: 'Press Start 2P'
+    --textoHeaderA1: aquamarine;
+    --degradadoA1: #d870b9;
+    --degradadoA2: #da41ac;
+    --degradadoA3: #da169f;
+    --textoHeaderB1: #da169f;
+    --degradadoB1: #89e5d6;
+    --degradadoB2: #67e9d3;
+    --degradadoB3: #27ebca;
+    --backBotones: #27ebca;
+    --botonFontColor: #a337c4;
+    --botonBorderColor: #a945c7;
+    --backHooverBoton1: #ffb703; 
+    --black: black;
+    --sm:1.4rem;
+    --md: 1.6rem;
+    --lg:1.7rem;
+    --minwidth:300px;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-color:var(--fondo);
+}
+.main{
+    height: 100vh;
+}
+.header{
+
+    height: 50px;
+    width: 100%;
+    min-width: var(--minwidth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    background-color: black;
+    color: aquamarine;
+    text-shadow: 0 0 10px var(--degradadoA1), 0 0 40px var(--degradadoA2), 0 0 80px var(--degradadoA3);
+}
+.header p:hover{
+    text-shadow: 0 0 10px #89e5d6,0 0 40px #67e9d3,0 0 80px #27ebca;
+    color: var(--textoHeaderB1);
+}
+
+.panel_Control{
+    height: 150px;
+    width: 100% ;
+    min-width: var(--minwidth);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.btn-neon{
+    display: on;
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--md);
+    width: 200px;
+    height: 30px;
+    font: bold;
+    font-family: var(--fontfami);
+    color: var(--textoHeaderB1);
+    text-shadow: 0 0 5px var(--backHooverBoton1), 0 0 10px var(--backHooverBoton1), 0 0 20px var(--backHooverBoton1)
+   
+    
+
+}
+.boton{
+    width: 200px;
+    height: 25px;
+    margin: 2px;  
+    background-color: var(--backBotones);  
+    border-radius: 20px;
+    font-size: var(--sm);
+    color: var(--botonFontColor);
+    border: 1px solid var(--botonBorderColor);
+    font: bold;
+    font-family: var(--fontfami);
+    text-shadow: 0 0 10px #db2fa8, 0 0 40px #db2fa8, 0 0 80px #db2fa8;
+    
+}
+
+.boton:hover{
+    
+    background-color:  var(--backHooverBoton1);
+    color: #a337c4;
+    font: bold;
+    text-shadow: 0 0 10px #db2fa8, 0 0 40px #db2fa8, 0 0 80px #db2fa8;
+}
+
+#btn1 {
+    background-color: #9e44b9;
+    color: aquamarine;
+    font: bold;
+    text-shadow: 0 0 10px #89e5d6,0 0 40px #67e9d3,0 0 80px #27ebca;
+}
+
+#btn1:hover {
+    background-color:  var(--backHooverBoton1);
+    color: #a337c4;
+    font: bold;
+    text-shadow: 0 0 10px #db2fa8, 0 0 40px #db2fa8, 0 0 80px #db2fa8;
+}
+
+.divResultados{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 05px 0 05px 0;
+}
+.resultado{
+    height: 25px;
+    width: 500px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color:  #ffb703;
+    text-shadow: 0 0 10px #89e5d6,0 0 40px #67e9d3,0 0 80px #27ebca;
+
+}
+
+.partida_container{
+    min-width: 300px;
+    min-height: calc(100vh - 160px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.marcador{
+    margin: 10px 0 10px 5px;
+    width: 27rem;
+    height: 2.1rem;
+    font-size: 1.2rem;
+    color: aquamarine;
+    font: bold;
+    text-shadow: 0 0 10px #89e5d6,0 0 40px #67e9d3,0 0 80px #27ebca;
+   
+}
+
+.marcador small{
+    color:var(--backHooverBoton1);
+    font-size: var(--lg);
+    text-shadow: 0 0 10px #db2fa8, 0 0 40px #db2fa8, 0 0 80px #db2fa8;
+}
+
+.cont-cartas{
+    padding-left: 40px;
+    margin: 10px 0 10px 0;
+    min-width: 27.5rem;
+    width: auto;
+    height: 15rem;
+}
+
+
+.carta{
+    width: 7rem;
+    height: 12rem;
+    margin-left: 0px;
+    position: relative;
+    margin-left: -30px;
+
+}
+
+
+.footer{
+    min-width: 300px;
+    width: 100vw;
+    height: 5rem;
+    /* padding-top: 20px; */
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.parrafo_footer{
+    width: 100vw;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--backBotones);
+}
+
+.parrafo_footer a{
+    text-decoration: none;
+    color: var(--degradadoB3);
+    text-shadow: 0 0 10px #db2fa8, 0 0 40px #db2fa8, 0 0 80px #db2fa8;
+}
+
+@media (min-width: 840px) {
+    .header{
+
+        height: 10rem;
+        font-size: 5rem;
+    
+    }
+    .panel_Control{
+     
+        flex-direction: row;
+        height: 7.5rem;
+        
+    }
+    .buttons-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .partida_container{
+        
+        min-height: calc(100vh - 8.5rem);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .divResultados{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px 0 10px 0;
+    }
+    .resultado{
+        height: 50px;
+        width: 500px;
+        background-color: #27ebca;
+    }
+
+    .cont{
+        margin-left: 50px;
+    }
+
+    .marcador{
+      
+        width: auto;
+        font-size: 2.2rem;
+        margin: 40px 0 40px 0;
+    }
+
+    .marcador small{
+    
+        font-size: 2.2rem;
+     
+    }
+
+    .carta{
+        width: 9rem;
+        height: 14rem;
+        margin-left: 0px;
+        position: relative;
+        margin-left: -30px;
+    
+    }
+
+    .parrafo_footer{
+        font-size: 1.2rem;
+    }
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  }

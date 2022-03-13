@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Poker</title>
+    
+</head>
+<body>
+    <header class="header">
+        <p>Black Jack</p> 
+    </header>
+    <main>
+        <section class="panel_Control">
+            <a class="btn-neon" id="btn-neon1">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                <p>Panel de Control</p>
+            </a>
+            <div class="buttons-container">
+                <button class="boton" id="btn1">Nuevo Juego</button>
+                <button class="boton" id="btnPedir">Pedir Carta</button>
+                <button class="boton" id="btnDetener">Detener Juego</button>
+            </div>        
+        </section>
+        <div class="divResultados">
+            <p class="resultado" id="resultadoPartida"></p>
+        </div>  
+        <div class="partida_container">
+            <div class="cont_Jugador cont">
+                <p class="marcador">Partida Jugador&nbsp;<small>0</small></p>
+                <div class="cont-cartas" id="jugador-cartas">
+                </div>
+            </div>
+
+            <div class="cont_Computadora cont">
+                <p class="marcador">Partida Computadora&nbsp;<small>0</small></p>
+                <div class="cont-cartas" id="computadora-cartas">
+                </div>
+            </div>
+            
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="parrafo_footer">
+            <p >Juego basado en la practica del curso de JavaScript de <a href="https://fernando-herrera.com/"> Fernado Herrera</a>
+            </p> 
+        </div>
+        
+    </footer>
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>

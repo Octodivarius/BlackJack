@@ -131,6 +131,7 @@ body{
 }
 
 .divResultados{
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -245,6 +246,7 @@ body{
         align-items: flex-start;
     }
     .divResultados{
+        width: 100vw;
         display: flex;
         justify-content: center;
         align-items: flex-start;
